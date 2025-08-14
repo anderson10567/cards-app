@@ -1,11 +1,11 @@
-//
+
 import { describe, it, expect } from 'vitest';
 import { LitElement } from 'lit';
-import '../my-card/my-card'; // импортируем кастомный элемент
+import '../my-card/my-card'; 
 
 describe('MyCard', () => {
   it('renders quote correctly', async () => {
-    // используем LitElement как тип
+    
     const card = document.createElement('my-card') as LitElement & {
       updateComplete: Promise<void>;
     };
